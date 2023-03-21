@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -21,12 +21,12 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
-    width: 300px;
+    width: 200px;
 }
 
 .spell-slot h2 {
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .spell-slots {
@@ -37,9 +37,9 @@ h1 {
 
 .slot {
     cursor: pointer;
-    height: 40px;
+    height: 25px;
     margin: 5px;
-    width: 40px;
+    width: 25px;
     background-color: #fff;
     border: 1px solid #868686;
     box-shadow: inset 0 0 7px 0 #d8d8d8;
@@ -49,13 +49,13 @@ h1 {
     content: "";
     display: block;
     background-color: #d416f2;
-    margin: 7.5px auto 0;
-    height: 25px;
-    width: 25px;
+    margin: 4.5px auto 0;
+    height: 16px;
+    width: 16px;
 }
 
 .glow {
-    animation: pulse .5s ease-in;
+    animation: pulse .3s ease-in;
     box-shadow: 0 0 8px 2px #d416f2;
 }
 
