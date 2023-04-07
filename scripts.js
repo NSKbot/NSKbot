@@ -1,3 +1,4 @@
+/* Create spell slots */
 const spellSlots = {
     1: 4, // Number of level 1 slots
     2: 3,  // Number of level 2 slots
@@ -5,12 +6,12 @@ const spellSlots = {
     4: 2,  // Number of level 4 slots
 };
 
+/* Toggle spell slot used */
 function toggleSlotUsed(level, used) {
     const slots = document.querySelectorAll(`#level-${level} .slot`);
     const targetSlot = used
         ? Array.from(slots).find((slot) => !slot.classList.contains("used"))
         : Array.from(slots).reverse().find((slot) => slot.classList.contains("used"));
-
     if (targetSlot) {
         targetSlot.classList.toggle("used");
         targetSlot.classList.toggle("glow"); // Add or remove the "glow" class
@@ -19,7 +20,7 @@ function toggleSlotUsed(level, used) {
         localStorage.setItem(key, used);
     }
 }
-
+/* Load spell slot state and applies glow CSS*/
 function loadSlotState(slot, level, index) {
     const key = `spell-slot-${level}-${index}`;
     const used = localStorage.getItem(key) === "true";
@@ -29,7 +30,7 @@ function loadSlotState(slot, level, index) {
 
     }
 }
-
+/* Creates the HTML for the spell slots */
 for (let level in spellSlots) {
     const container = document.querySelector(`#level-${level} .spell-slots`);
     for (let i = 0; i < spellSlots[level]; i++) {
