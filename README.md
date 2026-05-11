@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+Previously the user known as https://github.com/noahkunin
+
 <!--
 **NSKbot/NSKbot** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
